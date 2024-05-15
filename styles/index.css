@@ -1,0 +1,102 @@
+/* Configuraciones universales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+:root {
+  --admin-form-padding: 24px;
+}
+
+/* Estableciendo el tamaño de fuente estándar para toda la aplicación */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #678da321;
+
+  font-size: 1rem;
+}
+
+/* Formulario de ingreso para el administrador */
+form {
+  position: relative;
+  display: inline-block;
+  min-width: 280px;
+  max-width: 380px;
+  width: 100%;
+  height: 300px;
+  padding: var(--admin-form-padding);
+  padding-top: 50px;
+
+  background: #fff;
+}
+
+form > p {
+  margin-bottom: 10px;
+
+  font-size: 1.5rem;
+}
+
+form > p[role="heading"] {
+  margin-bottom: 14px;
+
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+form > p[role="error-alert"] {
+  color: red;
+}
+
+form > input {
+  display: block;
+}
+
+form > input[type="password"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid rgb(12, 96, 223);
+
+  font-size: 1.6rem;
+}
+
+form > input[type="password"]:focus {
+  outline: none;
+}
+
+/* Botón de envio */
+form > input[type="submit"] {
+  position: absolute;
+  right: var(--admin-form-padding);
+  bottom: 30px;
+  padding: 8px 20px;
+  border: none;
+
+  color: #fff;
+  
+  background: rgb(12, 96, 223);
+
+  cursor: pointer;
+}
+
+form > input[type="submit"]:hover {
+  background: rgba(12, 156, 223, 0.918);
+}
+
+form > input[type="submit"]:active {
+  width: 73px;
+  height: 32px;
+}
