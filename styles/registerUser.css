@@ -1,0 +1,172 @@
+/* Formulario usado para ingresar los datos del usuario a registrar en el sistema */
+form {
+  height: 620px;
+  padding-top: 30px;
+}
+
+form > p[role="heading"] {
+  text-align: center;
+}
+
+form > table {
+  width: 100%;
+  border-spacing: 0;
+
+  font-size: 1.5rem;
+}
+
+form > table th, form > table td {
+  padding: 15px 0 5px 0;
+}
+
+form > table th {
+  text-align: start;
+}
+
+form > table svg {
+  display: none;
+  width: 16px;
+  height: 16px;
+
+  fill: red;
+}
+
+form > table input {
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid rgb(12, 96, 223);
+
+  font-size: 1.5rem;
+}
+
+form > table input:focus {
+  outline: none;
+}
+
+form > table input:disabled {
+  cursor: not-allowed;
+  
+  background: #fff;
+
+  color: #00000083;
+}
+
+/* Botón para volver a la página de búsqueda de usuarios */
+form > input[name="cancel"] {
+  right: calc(var(--admin-form-padding) + 98px);
+
+  background: rgb(223, 70, 12);
+}
+
+form > input[name="cancel"]:hover {
+  background: rgb(231, 133, 98);
+}
+
+/* Todos los botones */
+form > input[type="submit"]:active {
+  width: 89px;
+  height: 32px;
+}
+
+/* Sección utilizada para indicar al usuario notaciones de errores en el formulario */
+form > .error-notation.section {
+  display: flex;
+  margin-top: 20px;
+}
+
+form > .error-notation.section > svg {
+  width: 16px;
+  height: 16px;
+  fill: red;
+}
+
+form > .error-notation.section > p{
+  margin-left: 20px;
+  
+  font-size: 1.2rem;
+  color: red;
+}
+
+/* Texto usado para indicar errores en el formulario */
+form > .error-alert {
+  margin-top: 8px;
+
+  color: red;
+  font-size: 1.3rem;
+}
+
+/* Sección utilizada para que el usuario confirme la acción */
+form > .warning-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background: #00000073;
+}
+
+form > .warning-background > div[class="warning-popup"] {
+  position: relative;
+  width: 400px;
+  height: 190px;
+  padding: 24px;
+  padding-top: 30px;
+
+  background: #fff;
+}
+
+form > .warning-background > div[class="warning-popup"] > p[role="heading"] {
+  margin-bottom: 14px;
+
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+form > .warning-background > div[class="warning-popup"] > p {
+  font-size: 1.5rem;
+}
+
+/* Botones utilizados dentro de la ventana popup */
+form > .warning-background > div[class="warning-popup"] input[type="submit"],
+form > .warning-background > div[class="warning-popup"] .cancel-register {
+  position: absolute;
+  right: var(--admin-form-padding);
+  bottom: 30px;
+  padding: 8px 20px;
+  border: none;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+form > .warning-background > div[class="warning-popup"] input[type="submit"]:active,
+form > .warning-background > div[class="warning-popup"] .cancel-register:active {
+  width: 89px;
+  height: 32px;
+}
+
+/* Boton utilizado para registrar al usuario en el sistema */
+form > .warning-background > div[class="warning-popup"] input[type="submit"] {
+  background: rgb(12, 96, 223);
+}
+
+form > .warning-background > div[class="warning-popup"] input[type="submit"]:hover {
+  background: rgba(12, 156, 223, 0.918);
+}
+
+/* Boton utilizado para cancelar la confirmación del registro */
+form > .warning-background > div[class="warning-popup"] .cancel-register {
+  right: calc(var(--admin-form-padding) + 98px);
+
+  background: rgb(223, 70, 12);
+}
+
+form > .warning-background > div[class="warning-popup"] .cancel-register:hover {
+  background: rgb(231, 133, 98);
+}
