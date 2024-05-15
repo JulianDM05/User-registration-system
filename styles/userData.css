@@ -1,0 +1,159 @@
+/* Sección utilizada para que el usuario confirme la eliminación de usuario */
+form > .warning-background.delete-user > .warning-popup {
+  width: 400px;
+  height: 230px;
+}
+
+form > .warning-background.delete-user > .warning-popup > .btn.delete,
+form > .warning-background.delete-user > .warning-popup > .cancel-delete {
+  position: absolute;
+  right: var(--admin-form-padding);
+  bottom: 30px;
+  padding: 8px 20px;
+  border: none;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+form > .warning-background.delete-user > .warning-popup > .cancel-delete:active,
+form > .warning-background.delete-user > .warning-popup > .btn.delete:active {
+  width: 89px;
+  height: 32px;
+}
+
+form > .warning-background.delete-user > .warning-popup > .cancel-delete {
+  right: calc(var(--admin-form-padding) + 98px);
+
+  background: rgb(223, 70, 12);
+}
+
+form > .warning-background.delete-user > .warning-popup > .cancel-delete:hover {
+  background: rgb(231, 133, 98);
+}
+
+/* Sección utilizada para que el usuario confirme la actualización de datos del usuario */
+form > .warning-background.update-user > .warning-popup {
+  width: 400px;
+  height: 230px;
+}
+
+form > .warning-background.update-user > .warning-popup > .btn.update,
+form > .warning-background.update-user > .warning-popup > .cancel-update {
+  position: absolute;
+  right: var(--admin-form-padding);
+  bottom: 30px;
+  padding: 8px 20px;
+  border: none;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+form > .warning-background.update-user > .warning-popup > .cancel-update:active {
+  width: 89px;
+  height: 32px;
+}
+
+form > .warning-background.update-user > .warning-popup > .btn.update:active {
+  width: 95px;
+  height: 32px;
+}
+
+form > .warning-background.update-user > .warning-popup > .cancel-update {
+  right: calc(var(--admin-form-padding) + 102px);
+
+  background: rgb(223, 70, 12);
+}
+
+form > .warning-background.update-user > .warning-popup > .cancel-update:hover {
+  background: rgb(231, 133, 98);
+}
+
+/* Sección utilizada para indicar al usuario notaciones de errores en el formulario */
+form > .error-notation.section {
+  display: none;
+}
+
+/* Botones del formulario */
+/* Boton de actualización de datos */
+form > .btn.update:active {
+  width: 95px;
+  height: 32px;
+}
+
+/* Boton de eliminación de usuario */
+form > .btn.open-pop-up,
+form > .btn.cancel-update {
+  position: absolute;
+  right: calc(var(--admin-form-padding) + 105px);
+  bottom: 30px;
+}
+
+/* Boton de cancelación de actualización de datos de usuario */
+form > .btn.cancel-update {
+  display: none;
+}
+
+form > .btn.open-pop-up:active,
+form > .btn.back:active {
+  width: 74px;
+  height: 32px;
+}
+
+/* Boton para volver a la página anterior */
+form > .btn.back {
+  position: absolute;
+  right: calc(var(--admin-form-padding) + 190px);
+  bottom: 30px;
+
+  background: rgb(223, 70, 12);
+}
+
+form > .btn.back:hover {
+  background: rgb(231, 133, 98);
+}
+
+/* Sección utilizada para que el usuario confirme la acción */
+form > section[class="warning-background"] > div[class="warning-popup"] {
+  position: relative;
+  width: 400px;
+  height: 230px;
+  padding: 24px;
+  padding-top: 30px;
+
+  background: #fff;
+}
+
+/* Botones utilizados dentro de la ventana popup */
+form > section[class="warning-background"] > div[class="warning-popup"] .btn.delete,
+form > section[class="warning-background"] > div[class="warning-popup"] .cancel-delete {
+  position: absolute;
+  right: var(--admin-form-padding);
+  bottom: 30px;
+  padding: 8px 20px;
+  border: none;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+form > section[class="warning-background"] > div[class="warning-popup"] .btn.delete:active,
+form > section[class="warning-background"] > div[class="warning-popup"] .cancel-delete:active {
+  width: 89px;
+  height: 32px;
+}
+
+/* Boton utilizado para cancelar la confirmación del registro */
+form > section[class="warning-background"] > div[class="warning-popup"] .cancel-delete {
+  right: calc(var(--admin-form-padding) + 98px);
+
+  background: rgb(223, 70, 12);
+}
+
+form > section[class="warning-background"] > div[class="warning-popup"] .cancel-delete:hover {
+  background: rgb(231, 133, 98);
+}
