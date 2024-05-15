@@ -1,0 +1,82 @@
+/* Formulario usado para aceptar términos y condiciones */
+form {
+  height: 560px;
+  padding-top: 30px;
+}
+
+form > p[role="heading"] {
+  text-align: center;
+}
+
+form > p[role="heading2"] {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Sección utilizada para mostrar los términos y condiciones */
+form > section[class="terms-and-conditions"] {
+  width: 100%;
+  height: 180px;
+  padding: 5px 10px;
+  border-top: 1px solid rgb(12, 96, 223);
+  border-bottom: 1px solid rgb(12, 96, 223);
+  overflow-y: scroll;
+
+  font-size: 1.3rem;
+}
+
+form > section[class="terms-and-conditions"] > p,
+form > section[class="terms-and-conditions"] > ul {
+  margin-bottom: 10px;
+}
+
+form > section[class="terms-and-conditions"] > b {
+  font-size: 1.5rem;
+}
+
+form > section[class="terms-and-conditions"] > ul {
+  list-style: none;
+}
+
+form > section[class="terms-and-conditions"] li::before {
+  content: "•";
+  margin-right: 10px;
+}
+
+/* Sección utilizada para aceptar los términos y condiciones */
+form > .terms-and-conditions.accept.disabled {
+  color: #00000083;
+}
+
+form > .terms-and-conditions.accept {
+  margin-top: 15px;
+
+  color: #000;
+  font-size: 1.3rem;
+}
+
+form > .terms-and-conditions.accept > div {
+  margin-bottom: 7px;
+}
+
+/* Botón para ir al formulario de registro de usuario */
+form > input[name="register"]:active {
+  width: 90px;
+  height: 32px;
+}
+
+form > input[name="register"]:disabled {
+  background: rgba(12, 96, 223, 0.459);
+  cursor: not-allowed;
+}
+
+/* Botón para volver a la página anterior */
+form > input[name="back"] {
+  right: calc(var(--admin-form-padding) + 98px);
+
+  background: rgb(223, 70, 12);
+}
+
+form > input[name="back"]:hover {
+  background: rgb(231, 133, 98);
+}
