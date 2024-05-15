@@ -3,7 +3,7 @@
 $host = "localhost";
 $username = "JulianDM";
 $password = "super_contraseña123";
-$dbname= "testingdb";
+$dbname= "registro";
 
 // Conexión con la base de datos
 $conexion = mysqli_connect($host, $username, $password, $dbname);
