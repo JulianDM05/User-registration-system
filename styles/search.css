@@ -1,0 +1,58 @@
+/* Formulario usado para buscaar un usuario en el sistema */
+form {
+  height: 330px;
+  padding-top: 30px;
+}
+
+form > p[role="heading"] {
+  text-align: center;
+}
+
+/* Lista desplegable usada para ingresar el número de docunento del usuario a buscar */
+form > select {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid rgb(12, 96, 223);
+  margin-bottom: 10px;
+
+  font-size: 1.6rem;
+}
+
+form > select:focus {
+  outline: none;
+  border: 1px solid rgb(12, 96, 223);
+  border-radius: 4px;
+
+  color: #000;
+}
+
+/* Input usado para ingresar el número de docunento del usuario a buscar */
+form > input[type="number"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 3px;
+  border: none;
+  border-bottom: 1px solid rgb(12, 96, 223);
+
+  font-size: 1.6rem;
+}
+
+form > input[type="number"]:focus {
+  outline: none;
+}
+
+form > input[type="number"]::placeholder, form > select {
+  color: gray;
+}
+
+/* Botón para volver a la página anterior */
+form > input[name="back"] {
+  right: calc(var(--admin-form-padding) + 85px);
+
+  background: rgb(223, 70, 12);
+}
+
+form > input[name="back"]:hover {
+  background: rgb(231, 133, 98);
+}
